@@ -434,7 +434,7 @@ input,textarea,select{
 .about .about-content .personal-info .info-item p{
 	font-weight: 600;
 	padding: 10px 0;
-	font-size: 16px;
+	font-size: 14px;
 	color: #302e4d;
 	margin: 0;
 	border-bottom: 1px solid #e8dfec;
@@ -445,10 +445,10 @@ input,textarea,select{
 	margin-left: 4px;
 	display: inline-block;
 }
-.about .about-content .personal-info .buttons{
+.about .about-content .buttons{
 	margin-top: 30px;
 }
-.about .about-content .personal-info .buttons .btn{
+.about .about-content .buttons .btn{
 	margin-right: 15px;
 	margin-top: 10px;
 }
@@ -466,7 +466,7 @@ input,textarea,select{
 .about .about-content .skills .skill-item p{
 	font-weight: 600;
 	padding: 10px 0;
-	font-size: 16px;
+	font-size: 14px;
 	color: #302e4d;
 	margin: 0;
 	border-bottom: 1px solid #e8dfec;
@@ -803,7 +803,7 @@ input,textarea,select{
 		max-width: 100%;
 	}
 }
-@media (max-width: 600px){
+@media (max-width: 500px){
 	.contact .contact-info-item,
 	.portfolio .portfolio-item{
 		-ms-flex: 0 0 100%;
