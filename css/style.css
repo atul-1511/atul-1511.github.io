@@ -803,7 +803,7 @@ input,textarea,select{
 		max-width: 100%;
 	}
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
 	.contact .contact-info-item,
 	.portfolio .portfolio-item{
 		-ms-flex: 0 0 100%;
