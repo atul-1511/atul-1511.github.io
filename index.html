@@ -62,7 +62,10 @@
 					
 					<label for = "Speech Recognition">Speech Recognition on Website Load</label>
 					<input type = "text" name = "" id = "speechToText" placeholder="Speak" style="width: 50%;"><br>
-						<script>
+
+<!-- Speech to text code integrated here -->
+
+					<!-- 						<script>
 							if ('webkitSpeechRecognition' in window) {
 							  var recognition = new webkitSpeechRecognition();
 							  var final_transcript = '';
@@ -80,11 +83,15 @@
 							  };
 							  recognition.start();
 							}
-						</script>
+						</script> -->
+<!-- Speech to text code ends here  -->
+					
 					<label for = "Speech Recognition">Speech Recognition on Click</label>
 					<input type = "text" name = "" id = "speechText" placeholder="Click & Speak" onclick="record()" style="width: 50%;">
 
-						<script>
+					
+<!-- Speech to text code integrated here -->
+<!-- 				<script>
 							function record() {
 								var recognition = new webkitSpeechRecognition();
 								recognition.lang = "en-GB";
@@ -96,7 +103,9 @@
 
 								recognition.start();
 							}
-						</script>
+						</script> -->
+<!-- Speech to text code ends here  -->
+					
 				</div>
 			</div>
 		</section>
