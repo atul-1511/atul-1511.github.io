@@ -59,8 +59,9 @@
 						<a href="https://github.com/atul-1511"><i class="fa fa-github"></i></a>
 
 					</div>
-					<label for = "Speech Recognition">Speech Recognition</label>
-						<input type = "text" name = "" id = "speechToText" placeholder="Speak Something" style = "width: 50%;">
+					
+					<label for = "Speech Recognition">Speech Recognition on Website Load</label>
+					<input type = "text" name = "" id = "speechToText" placeholder="Speak" style="width: 50%;"><br>
 						<script>
 							if ('webkitSpeechRecognition' in window) {
 							  var recognition = new webkitSpeechRecognition();
@@ -78,6 +79,22 @@
 							    document.getElementById( 'speechToText' ).value = final_transcript;
 							  };
 							  recognition.start();
+							}
+						</script>
+					<label for = "Speech Recognition">Speech Recognition on Click</label>
+					<input type = "text" name = "" id = "speechText" placeholder="Click & Speak" onclick="record()" style="width: 50%;">
+
+						<script>
+							function record() {
+								var recognition = new webkitSpeechRecognition();
+								recognition.lang = "en-GB";
+
+								recognition.onresult = function(event) {
+									console.log(event);
+									document.getElementById('speechText').value = event.results[0][0].transcript;
+								}
+
+								recognition.start();
 							}
 						</script>
 				</div>
