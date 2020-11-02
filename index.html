@@ -60,51 +60,7 @@
 
 					</div>
 					
-					<label for = "Speech Recognition">Speech Recognition on Website Load</label>
-					<input type = "text" name = "" id = "speechToText" placeholder="Speak" style="width: 50%;"><br>
-
-<!-- Speech to text code integrated here -->
-
-											<script>
-							if ('webkitSpeechRecognition' in window) {
-							  var recognition = new webkitSpeechRecognition();
-							  var final_transcript = '';
-							  recognition.continuous = true;
-							  recognition.interimResults = true;
-
-							  recognition.onresult = function( event ) {
-							    var final_transcript = '';
-							    for (var i = event.resultIndex; i < event.results.length; ++i) {
-							      if (event.results[i].isFinal) {
-							        final_transcript += event.results[i][0].transcript;
-							      } 
-							    }
-							    document.getElementById( 'speechToText' ).value = final_transcript;
-							  };
-							  recognition.start();
-							}
-						</script>
-<!-- Speech to text code ends here  -->
 					
-					<label for = "Speech Recognition">Speech Recognition on Click</label>
-					<input type = "text" name = "" id = "speechText" placeholder="Click & Speak" onclick="record()" style="width: 50%;">
-
-					
-<!-- Speech to text code integrated here -->
-				<script>
-							function record() {
-								var recognition = new webkitSpeechRecognition();
-								recognition.lang = "en-GB";
-
-								recognition.onresult = function(event) {
-									console.log(event);
-									document.getElementById('speechText').value = event.results[0][0].transcript;
-								}
-
-								recognition.start();
-							}
-						</script>
-<!-- Speech to text code ends here  -->
 					
 				</div>
 			</div>
