@@ -434,7 +434,7 @@ input,textarea,select{
 .about .about-content .personal-info .info-item p{
 	font-weight: 600;
 	padding: 10px 0;
-	font-size: 14px;
+	font-size: 16px;
 	color: #302e4d;
 	margin: 0;
 	border-bottom: 1px solid #e8dfec;
@@ -466,7 +466,7 @@ input,textarea,select{
 .about .about-content .skills .skill-item p{
 	font-weight: 600;
 	padding: 10px 0;
-	font-size: 14px;
+	font-size: 16px;
 	color: #302e4d;
 	margin: 0;
 	border-bottom: 1px solid #e8dfec;
@@ -512,7 +512,7 @@ input,textarea,select{
 .about .timeline .timeline-item{
 	position: relative;
 	padding-left: 37px;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 }
 .about .timeline .timeline-item:last-child{
 	padding-bottom: 0px;
@@ -811,21 +811,3 @@ input,textarea,select{
 		max-width: 100%;
 	}
 }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
